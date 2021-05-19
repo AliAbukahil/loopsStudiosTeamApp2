@@ -1,3 +1,11 @@
+
+@mixin leftSide {
+    width: 22vw;
+height: 2vw;
+margin-left: 8vw;
+padding-top: 2vh;
+}
+=======
 @mixin min($min-width) {
   @media screen and(min-width:$min-width) {
     @content;
@@ -16,3 +24,4 @@
   align-items: $align-item;
   justify-content: $j-content;
 }
+
