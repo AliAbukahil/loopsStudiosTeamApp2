@@ -87,5 +87,67 @@ header .title p {
     position: relative; */
   }
 }
+.container {
+  width: 100vw;
+  height: 12vw;
+  background-color: black;
+}
+
+.left-side {
+  width: 22vw;
+  height: 2vw;
+  margin-left: 8vw;
+  padding-top: 2vh;
+}
+
+h1 {
+  color: white;
+  margin-left: 2.6vw;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+li a {
+  color: white;
+  list-style: none;
+}
+
+.footer-social.media {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  position: relative;
+  top: -2vh;
+  left: 77vw;
+}
+
+.copyright {
+  color: white;
+  position: relative;
+  left: 75vw;
+}
+
+.challanged-father {
+  width: 100vw;
+  height: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challanged {
+  color: white;
+  right: 8vw;
+  position: relative;
+  top: -7vh;
+}
 
 /*# sourceMappingURL=main.css.map */
