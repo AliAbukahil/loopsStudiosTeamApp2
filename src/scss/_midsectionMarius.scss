@@ -5,6 +5,7 @@
     width:60%;
     margin-left:auto;
     margin-right:auto;
+    font-family:"lato";
     #ourProjectsHeader{
         display:flex;
         flex-direction:row;
@@ -30,9 +31,7 @@
          flex-wrap:wrap;
    
          .projects{
-            flex: 1 0 21%;
-            height:40rem;
-            margin:1%;
+           
              display:flex;
              
              img{
@@ -50,7 +49,7 @@
                 
               justify-items:flex-start;
                 position:relative;
-                -o-table-baseline: inherit;
+              
                 margin-bottom:25%;
                 
              }
