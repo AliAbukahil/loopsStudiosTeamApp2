@@ -4,3 +4,37 @@ height: 2vw;
 margin-left: 8vw;
 padding-top: 2vh;
 }
+@mixin para {
+    
+    color: white;
+    margin-left: 2.6vw;
+} 
+@mixin footerlist{
+ display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+}
+@mixin footer {
+    width: 100vw;
+        height:8vw;
+        background-color: yellow;
+        
+    
+}
+
+@mixin challangedtop {
+    width: 100vw;
+    height: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin challange {
+    
+    left: 2vw;
+    position: relative;
+    top: -6vh;
+    
+}

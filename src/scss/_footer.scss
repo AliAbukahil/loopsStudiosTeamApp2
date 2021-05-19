@@ -1,62 +1,143 @@
 
-.container{
-    width: 100vw;
-    height:12vw;
-    background-color: black;
-}
-.left-side{
-@include leftSide;
-}
-h1{
+
+@media screen and (max-width: 1900px) {
+
+    .footer-container{
+        @include footer;
     
-    color: white;
-    margin-left: 2.6vw;
+    .left-side{
+    @include leftSide;
+    
+    .topic{
+        
+        @include para;
+    }
+    
+    .footer-list{
+        @include footerlist;
+    
+    .list-i{
+    .word {
+        color: $word-color;
+        list-style: none;
+    }
+    }
 }
-
-ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-}
-li{
-a {
-    color: white;
-    list-style: none;
-}
-}
-.footer-social.media{
-    display: flex;
-    justify-content: space-between;
+    }
+    
+    
+     
+    .footer-img{    
+    position: relative;
+    left: 88vw;
     
 }
-img{
- 
-position: relative;
-top: -2vh;
-left: 77vw;
+    .copyright{
+        top: $copy-top;
+        left: $copy-left; 
+    position: relative;
 
+    }
+    .challanged-father{
+        @include challangedtop;
+    
+    .challanged{
+        @include challange;
+        
+    }
 }
-.copyright{
+    }
+    @media screen and (max-width: 800px){
+        .footer-container{
+            @include footer;
+        
+        .left-side{
+        @include leftSide;
+        
+        .topic{
+            
+            @include para;
+        }
+        
+        .footer-list{
+            @include footerlist;
+        
+        .list-i{
+        .word {
+            color: $word-color;
+            list-style: none;
+        }
+        }
+    }
+        }
+        .footer-social.media{
+        
+        
+        .footer-img{    
+        position: relative;
+        
+        
+        }
+    }
+        .copyright{
+            top: $copy-top;
+            left: $copy-left; 
+        position: relative;
+    
+        }
+        .challanged-father{
+            @include challangedtop;
+        
+        .challanged{
+            @include challangedtop;
+        }
+    }
+        }
+    }
 
-color: white; 
-position: relative;
-left: 75vw;
-
-
+    @media screen and (max-width: 500px) {
+        
+    .footer-container{
+        @include footer;
+    
+    .left-side{
+    @include leftSide;
+    
+    .topic{
+        
+        @include para;
+    }
+    
+    .footer-list{
+        @include footerlist;
+    
+    .footer-list-i{
+    .word {
+        color: $word-color;
+        list-style: none;
+    }
+    }
 }
-.challanged-father{
-    width: 100vw;
-    height: 12vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.challanged{
-    color:white;
+    }
+    
+    
+    .footer-img{    
+    position: relative;
+    
+    
+    }
 
-right: 8vw;
-position: relative;
-top: -7vh;
+    .copyright{
+        top: $copy-top;
+        left: $copy-left; 
+    position: relative;
+
+    }
+    .challanged-father{
+        @include challangedtop;
+    
+    .challanged{
+        @include challange;
+    }
 }
+}}}
