@@ -1,0 +1,66 @@
+#ourProjects{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    width:60%;
+    
+    margin-left:auto;
+    margin-right:auto;
+    #ourProjectsHeader{
+        display:flex;
+        flex-direction:row;
+    
+        p{
+            font-size:3rem;
+            margin-left:1%;
+        }
+        button{
+            margin-left:auto;
+            margin-right:1%;
+            height:50%;
+            width:8rem;
+            align-self:center;
+        }
+    }
+    #projectBox{ 
+     
+         display:flex;
+         flex-direction:row;
+         flex-wrap:wrap;
+   
+         .projects{
+            flex: 1 0 21%;
+            height:40rem;
+            margin:1%;
+             display:flex;
+             
+             img{
+                 position:absolute;
+                height:43%;
+                width:14%;
+             }
+             p{
+               color:white;
+                 width:50%;
+                 font-size:2.9rem;
+                align-self:flex-end;
+                margin-left:15%;   
+                z-index: 1;
+                
+              justify-items:flex-start;
+                position:relative;
+                -o-table-baseline: inherit;
+                margin-bottom:25%;
+                
+             }
+             #gridphrase{
+                 margin-bottom:10%;
+             }
+             #soccerPhrase{
+                 margin-left:15%;
+             }
+         } 
+    }
+    
+
+}
