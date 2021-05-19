@@ -1,0 +1,88 @@
+// import variables and fonts
+.container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0px 1.5rem;
+}
+
+.vr {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  position: relative;
+  @include max(1080px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include max(768px) {
+    padding-top: 96px;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    @include max(1080px) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    background: url(../../img/desktop/image-interactive.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+    @include max(1080px) {
+      width: 130%;
+      background-size: cover;
+    }
+    @include max(768px) {
+      background: url(../../img/mobile/image-interactive.jpg);
+      height: 223px;
+      width: 100vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 25rem;
+    right: 20rem;
+    bottom: 0;
+    background: white;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+    @include max(1300px) {
+      right: 3.5rem;
+    }
+    @include max(1200px) {
+      right: 1.5rem;
+    }
+    @include max(1080px) {
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      text-align: center;
+    }
+    @include max(340px) {
+      font-size: 1.7rem;
+    }
+  }
+  p {
+    max-width: 28rem;
+    color: gray;
+    // variable
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.75;
+    @include max(1080px) {
+      margin: auto;
+    }
+    @include max(376px) {
+      max-width: 18rem;
+      margin: auto;
+    }
+    @include max(340px) {
+      font-size: 0.75rem;
+    }
+  }
+}
