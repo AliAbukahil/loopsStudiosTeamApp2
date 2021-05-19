@@ -1,6 +1,27 @@
+
 @mixin leftSide {
     width: 22vw;
 height: 2vw;
 margin-left: 8vw;
 padding-top: 2vh;
 }
+=======
+@mixin min($min-width) {
+  @media screen and(min-width:$min-width) {
+    @content;
+  }
+}
+
+@mixin max($max-width) {
+  @media screen and(max-width:$max-width) {
+    @content;
+  }
+}
+
+@mixin flex($direction, $align-item, $j-content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-item;
+  justify-content: $j-content;
+}
+
