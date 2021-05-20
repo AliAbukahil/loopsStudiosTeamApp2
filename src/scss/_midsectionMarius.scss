@@ -26,23 +26,42 @@
     }
 }
 #projectBox{ 
-    border-style:dotted;
-    border-color:black;
+   
     text-align: center;
    
-    
-    
+
+    :hover{
+        div{
+          
+            width:13.8%; 
+            @media (max-width: 375px) { 
+                width:69%;
+                 }
+            border-color:black;
+            background-color:rgba(128, 128, 128, 0.527);
+          
+        }
+      
+    }
      .projects{
        display:inline-block;
       margin:1%;
        width:20%;
        height:auto;
        
-       border-style:dotted;
-       border-color:black;
         text-align: end;
         @media (max-width: 375px) { width:100% }
-       
+        border-style:dotted;
+     
+        div{
+            position:absolute;
+            height:49%;
+            transition: all 0.3s ease-in-out;
+            z-index: 1;
+            @media (max-width: 375px) { 
+                height:56%;
+                  }
+        }
          img{
              position:relative;
             width:100%;
@@ -56,10 +75,10 @@
             font-size:2rem;
             margin-top:19%;
             margin-left:1%;
-      
+            
             @media (max-width: 375px) { margin-top:80%; }
          }
-      
+         
          
      }
     }
