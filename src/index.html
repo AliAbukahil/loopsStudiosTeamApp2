@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>Loops Studios Team App 2</title>
   </head>
   <body>
@@ -14,9 +16,9 @@
         <div id="logo">
           <a href="#"><img src="./icons/logo.svg" alt="" /></a>
         </div>
-        <!--         <input type="checkbox" class="menu-check" /> -->
-        <!-- commented because it is done in javaScript -->
+
         <ul class="nav-links">
+          <!-- <input type="checkbox" class="menu-check" /> -->
           <li><a href="#about">About</a></li>
           <li><a href="#careers">Careers</a></li>
           <li><a href="#events">Events</a></li>
@@ -24,11 +26,11 @@
           <li><a href="#support">Support</a></li>
         </ul>
         <!-- The Burger Menu -->
-        <!-- <div class="burger">
+        <div class="burger">
           <span class="line1"></span>
           <span class="line2"></span>
           <span class="line3"></span>
-        </div> -->
+        </div>
         <!-- End of Burger Menu -->
       </nav>
       <div class="title">
@@ -62,11 +64,74 @@
     <!-- End of Alina Section  -->
 
     <!-- Marius Section -->
-    <section></section>
+    <section id=ourProjects>
+      <div id="ourProjectsHeader">
+      <p>
+      Our creations
+    </p>
+      <button id="seeAllButton">
+        See all
+      </button>
+    </div>
+      <div id="projectBox">
+      <div class="projects"> <p> Deep earth </p><img src="./img/desktop/image-deep-earth.jpg" alt=""></div>
+      <div class="projects"> <p>Night arcade </p> <img src="./img/desktop/image-night-arcade.jpg" alt=""> </div>
+      <div class="projects"> <p id="soccerPhrase">Soccer team VR </p><img src="./img/desktop/image-soccer-team.jpg" alt=""></div>
+      <div class="projects"> <p id="gridPhrase">The grid</p><img src="./img/desktop/image-grid.jpg" alt=""> </div>
+      <div class="projects"> <p>From up above VR </p><img src="./img/desktop/image-from-above.jpg" alt=""></div>
+      <div class="projects"> <p>Pocket borealis  </p><img src="./img/desktop/image-pocket-borealis.jpg" alt=""></div>
+      <div class="projects"> <p>The curiosity  </p><img src="./img/desktop/image-curiosity.jpg" alt=""></div>
+      <div class="projects"> <p>Make it fisheye  </p> <img src="./img/desktop/image-fisheye.jpg" alt=""></div>
+      </div>
+    </section>
     <!-- End of Marius Section -->
 
     <!-- Ahamd Section -->
-    <footer></footer>
+      <footer> 
+
+
+    
+  <div class="container">
+    <div class="left-side">
+  <h1>LoopStudios</h1>
+</br></br>
+  
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Support</a></li>
+  
+  </ul>
+  
+  <div class="footer-social-media">
+  
+      <img src="./icons/icon-facebook.svg" alt="facebook">
+      <img src="./icons/icon-twitter.svg" alt="twitter">
+      <img src="./icons/icon-pinterest.svg" alt="pinterest">
+      <img src="./icons/icon-instagram.svg" alt="instagram">
+  
+  </div>
+
+
+  
+  <div class="copyright">© <span id="year">2021</span> Loopstudios. All rights reserved</div>
+  <div class="challanged-father">
+  <div class="challanged">challanged by Maaa Group</div>
+  </div>
+  </div>
+  <script>
+  const year = new Date().getFullYear();
+  document.querySelector("#year").innerHTML = year;
+  </script>
+  
+  
+  
+  
+  
+    </footer> 
     <!-- End of Ahamd Section -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
