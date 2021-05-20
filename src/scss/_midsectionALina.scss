@@ -1,6 +1,6 @@
 // import variables and fonts
 .container {
-  max-width: 1160px;
+  max-width: 1025px;
   margin: auto;
   padding: 0px 1.5rem;
 }
@@ -9,7 +9,7 @@
   padding-top: 5rem;
   padding-bottom: 0;
   position: relative;
-  @include max(1080px) {
+  @include max(1024px) {
     display: flex;
     justify-content: space-between;
   }
@@ -19,7 +19,7 @@
   &__flex {
     display: flex;
     align-items: center;
-    @include max(1080px) {
+    @include max(1024px) {
       flex-direction: column;
     }
   }
@@ -28,11 +28,11 @@
     background-repeat: no-repeat;
     height: 70vh;
     width: 100vw;
-    @include max(1080px) {
+    @include max(1024px) {
       width: 130%;
       background-size: cover;
     }
-    @include max(768px) {
+    @include max(375px) {
       background: url(../../img/mobile/image-interactive.jpg);
       height: 223px;
       width: 100vw;
@@ -58,14 +58,14 @@
     @include max(1200px) {
       right: 1.5rem;
     }
-    @include max(1080px) {
+    @include max(1024px) {
       position: static;
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
       text-align: center;
     }
-    @include max(340px) {
+    @include max(768px) {
       font-size: 1.7rem;
     }
   }
@@ -76,15 +76,15 @@
     font-family: $Josefin;
     letter-spacing: 0.05rem;
     line-height: 1.75;
-    @include max(1080px) {
+    @include max(1024px) {
       margin: auto;
     }
-    @include max(376px) {
+    @include max(768px) {
       max-width: 18rem;
       margin: auto;
     }
-    @include max(340px) {
-      font-size: 0.75rem;
+    @include max(375px) {
+      font-size: 0.8rem;
     }
   }
 }
