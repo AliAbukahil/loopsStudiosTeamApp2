@@ -1,143 +1,59 @@
 
-
-@media screen and (max-width: 1900px) {
-
-    .footer-container{
-        @include footer;
-    
-    .left-side{
-    @include leftSide;
-    
-    .topic{
-        
-        @include para;
-    }
-    
-    .footer-list{
-        @include footerlist;
-    
-    .list-i{
-    .word {
-        color: $word-color;
-        list-style: none;
-    }
-    }
+.footer-wrapper {
+width: 100vw;
+height: 12vw;
+background-color: black;
 }
-    }
-    
-    
-     
-    .footer-img{    
-    position: relative;
-    left: 88vw;
-    
-}
-    .copyright{
-        top: $copy-top;
-        left: $copy-left; 
-    position: relative;
+.left-side {
+    width: 22vw;
+     height: 2vw;
+    margin-left: 8vw;
+    padding-top: 2vh;
 
-    }
-    .challanged-father{
-        @include challangedtop;
-    
-    .challanged{
-        @include challange;
-        
-    }
 }
-    }
-    @media screen and (max-width: 800px){
-        .footer-container{
-            @include footer;
-        
-        .left-side{
-        @include leftSide;
-        
-        .topic{
-            
-            @include para;
-        }
-        
-        .footer-list{
-            @include footerlist;
-        
-        .list-i{
-        .word {
-            color: $word-color;
-            list-style: none;
-        }
-        }
-    }
-        }
-        .footer-social.media{
-        
-        
-        .footer-img{    
-        position: relative;
-        
-        
-        }
-    }
-        .copyright{
-            top: $copy-top;
-            left: $copy-left; 
-        position: relative;
-    
-        }
-        .challanged-father{
-            @include challangedtop;
-        
-        .challanged{
-            @include challangedtop;
-        }
-    }
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        
-    .footer-container{
-        @include footer;
-    
-    .left-side{
-    @include leftSide;
-    
-    .topic{
-        
-        @include para;
-    }
-    
-    .footer-list{
-        @include footerlist;
-    
-    .footer-list-i{
-    .word {
-        color: $word-color;
-        list-style: none;
-    }
-    }
+.topic {
+color: white;
+margin-left: 2.6vw;
 }
-    }
-    
-    
-    .footer-img{    
-    position: relative;
-    
-    
-    }
 
-    .copyright{
-        top: $copy-top;
-        left: $copy-left; 
-    position: relative;
-
-    }
-    .challanged-father{
-        @include challangedtop;
-    
-    .challanged{
-        @include challange;
-    }
+.footer-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+list-style: none;
 }
-}}}
+.footer-list-i{
+.word{
+color: white;
+list-style: none;
+}
+}
+.footer-social.media {
+display: flex;
+justify-content: space-between;
+}
+.footer-img{
+position: relative;
+top: -2vh;
+left: 77vw;
+}
+.copyright {
+color: white;
+position: relative;
+left: 75vw;
+}
+.challanged-father {
+width: 100vw;
+height: 12vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.challanged {
+color: white;
+
+right: 8vw;
+position: relative;
+top: -7vh;
+}
