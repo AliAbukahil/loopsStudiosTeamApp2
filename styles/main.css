@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 *,
 *::after,
 *::before {
@@ -65,12 +67,18 @@ header .title p {
   letter-spacing: 0.8rem;
 }
 
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 842px) {
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
   .burger span {
     padding: 0.2rem 2rem;
     background: white;
-    margin: 0.5rem 0rem;
     display: block;
+    margin: 0.5rem 0rem;
+    transition: all 0.5s ease;
   }
 
   .nav-links {
@@ -78,15 +86,223 @@ header .title p {
     width: 100%;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+  .nav-links .menu-check {
+    position: absolute;
+    top: 10rem;
+    right: 55rem;
+    transform: translate(5%, -50%);
+    width: 5rem;
+    height: 5rem;
   }
 
   .title {
-    /*     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; */
+    display: none;
   }
 }
+.nav-open {
+  transform: translateX(-100%);
+}
+
+.toggle .line1 {
+  transform: rotateZ(45deg) translateY(300%);
+  background: white;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotateZ(-45deg) translateY(-300%);
+  background: white;
+}
+
+#ourProjects {
+  height: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "lato";
+}
+
+#ourProjectsHeader {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+#ourProjectsHeader p {
+  font-size: 4rem;
+  margin-left: 7%;
+}
+#ourProjectsHeader button {
+  margin-left: auto;
+  margin-right: 8%;
+  margin-top: 1%;
+  height: 3rem;
+  width: 20rem;
+  align-self: center;
+  background-color: white;
+  border-width: 1.5px 1.5px 1px 1px;
+}
+
+#projectBox {
+  border-style: dotted;
+  border-color: black;
+  text-align: center;
+}
+#projectBox .projects {
+  display: inline-block;
+  margin: 1%;
+  width: 20%;
+  height: auto;
+  border-style: dotted;
+  border-color: black;
+  text-align: end;
+}
+@media (max-width: 375px) {
+  #projectBox .projects {
+    width: 100%;
+  }
+}
+#projectBox .projects img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#projectBox .projects p {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-size: 2rem;
+  margin-top: 19%;
+  margin-left: 1%;
+}
+@media (max-width: 375px) {
+  #projectBox .projects p {
+    margin-top: 80%;
+  }
+}
+
+.container {
+  max-width: 1025px;
+  margin: auto;
+  padding: 0px 1.5rem;
+}
+
+.vr {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .vr {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vr {
+    padding-top: 96px;
+  }
+}
+.vr__flex {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .vr__flex {
+    flex-direction: column;
+  }
+}
+.vr__img {
+  background: url(../../img/desktop/image-interactive.jpg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100vw;
+}
+@media screen and (max-width: 1024px) {
+  .vr__img {
+    width: 130%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vr__img {
+    background: url(../../img/mobile/image-interactive.jpg);
+    height: 223px;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.vr__text {
+  position: absolute;
+  top: 25rem;
+  right: 20rem;
+  bottom: 0;
+  background: white;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 0.5rem;
+  padding-bottom: 3rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 200;
+}
+@media screen and (max-width: 1300px) {
+  .vr__text {
+    right: 3.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .vr__text {
+    right: 1.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .vr__text {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vr__text {
+    font-size: 1.7rem;
+  }
+}
+.vr p {
+  max-width: 28rem;
+  color: gray;
+  font-size: 0.85rem;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.75;
+}
+@media screen and (max-width: 1024px) {
+  .vr p {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vr p {
+    max-width: 18rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vr p {
+    font-size: 0.8rem;
+  }
+}
+
 .footer-wrapper {
   width: 100vw;
   height: 12vw;
@@ -150,7 +366,7 @@ header .title p {
   top: -7vh;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .footer-wrapper {
     width: 100vw;
     height: 66vw;
