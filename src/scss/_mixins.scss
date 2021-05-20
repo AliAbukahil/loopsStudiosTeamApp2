@@ -1,45 +1,19 @@
-// @mixin leftSide {
-//     width: 22vw;
-// height: 2vw;
-// margin-left: 8vw;
-// padding-top: 2vh;
-// }
-// @mixin para {
-    
-//     color: white;
-//     margin-left: 2.6vw;
-// } 
-// @mixin footerlist{
-//  display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         flex-direction: row;
-//         list-style: none;
-// }
-// @mixin footer {
-//     width: 100vw;
-//         height:10vw;
-//         background-color: black
-        
-    
-// }
-// @mixin footermobile {
-//     width: 100vw;
-//         height:66vw;
-//         background-color: black;
-//  }
 
+@mixin leftSide {
+  width: 22vw;
+  height: 2vw;
+  margin-left: 8vw;
+  padding-top: 2vh;
+}
 
-// @mixin challange {
-    
-//     left: 50vw;
-//     position: relative;
-//     top: 4vh;
-    
-// }
-// @mixin challangemobile {
-//     left: 38vw;
-//     position: relative;
-//     top: 14vh;
-    
-// }
+@mixin min($min-width) {
+  @media screen and(min-width:$min-width) {
+    @content;
+  }
+}
+
+@mixin max($max-width) {
+  @media screen and(max-width:$max-width) {
+    @content;
+  }
+}
